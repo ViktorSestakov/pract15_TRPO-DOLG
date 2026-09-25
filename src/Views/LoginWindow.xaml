@@ -1,0 +1,29 @@
+<Window x:Class="ElectronicsShop.Views.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Style="{StaticResource {x:Type Window}}"
+        Title="Вход в магазин" Height="430" Width="500" ResizeMode="NoResize">
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Магазин электроники" FontSize="24" FontWeight="Bold" Margin="0,0,0,25"/>
+        <StackPanel Grid.Row="1">
+            <TextBlock Text="ПИН-код менеджера" FontSize="16" Margin="0,0,0,10"/>
+            <PasswordBox x:Name="PinBox"/>
+        </StackPanel>
+        <TextBlock Grid.Row="2" x:Name="ErrorText" Foreground="#A52A2A" MinHeight="25" Margin="0,8,0,10"/>
+        <Button Grid.Row="3" Click="Login" Content="Войти как менеджер" IsDefault="True" Height="40" Margin="0,0,0,15"/>
+        <Button Grid.Row="4" Click="EnterVisitor" Content="Войти как посетитель" Height="40"/>
+    </Grid>
+</Window>

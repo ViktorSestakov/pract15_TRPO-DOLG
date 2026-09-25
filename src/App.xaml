@@ -1,0 +1,65 @@
+<Application x:Class="ElectronicsShop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             StartupUri="Views/LoginWindow.xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <materialDesign:BundledTheme BaseTheme="Light" PrimaryColor="Teal" SecondaryColor="Cyan"/>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesign2.Defaults.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <SolidColorBrush x:Key="MaterialDesign.Brush.Primary" Color="#00C4B4"/>
+            <SolidColorBrush x:Key="MaterialDesign.Brush.Primary.Foreground" Color="#173338"/>
+            <SolidColorBrush x:Key="MaterialDesign.Brush.Secondary" Color="#00b4c4"/>
+            <SolidColorBrush x:Key="MaterialDesign.Brush.Secondary.Foreground" Color="#173338"/>
+
+            <Style TargetType="Window">
+                <Setter Property="Background" Value="#dfeaeb"/>
+                <Setter Property="Foreground" Value="#173338"/>
+                <Setter Property="FontFamily" Value="Segoe UI"/>
+                <Setter Property="FontSize" Value="14"/>
+                <Setter Property="Language" Value="ru-RU"/>
+            </Style>
+
+            <Style TargetType="TextBox" BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="BorderBrush" Value="#00C4B4"/>
+                <Setter Property="MinHeight" Value="36"/>
+                <Setter Property="Padding" Value="10,6"/>
+                <Setter Property="VerticalContentAlignment" Value="Center"/>
+                <Setter Property="AutomationProperties.Name" Value=""/>
+            </Style>
+
+            <Style TargetType="ComboBox" BasedOn="{StaticResource MaterialDesignOutlinedComboBox}">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="BorderBrush" Value="#00C4B4"/>
+                <Setter Property="MinHeight" Value="36"/>
+                <Setter Property="Padding" Value="10,6"/>
+                <Setter Property="AutomationProperties.Name" Value=""/>
+            </Style>
+
+            <Style TargetType="PasswordBox" BasedOn="{StaticResource MaterialDesignOutlinedPasswordBox}">
+                <Setter Property="Background" Value="White"/>
+                <Setter Property="MinHeight" Value="40"/>
+                <Setter Property="Padding" Value="10,8"/>
+            </Style>
+
+            <Style TargetType="DatePicker" BasedOn="{StaticResource MaterialDesignDatePicker}">
+                <Setter Property="MinHeight" Value="36"/>
+                <Setter Property="Background" Value="White"/>
+            </Style>
+
+            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedButton}">
+                <Setter Property="Background" Value="#00C4B4"/>
+                <Setter Property="BorderBrush" Value="#00C4B4"/>
+                <Setter Property="Foreground" Value="#173338"/>
+                <Setter Property="MinHeight" Value="36"/>
+                <Setter Property="Padding" Value="10,6"/>
+                <Setter Property="FontSize" Value="14"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

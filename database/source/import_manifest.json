@@ -1,0 +1,19 @@
+{
+  "source": "https://github.com/dk1gdo/import_eshop",
+  "git_blob_sha": "4cd03df3242dc9ce07d2f523baaea6b3f3fff4b7",
+  "sha256": "33766049209de2cc6e038b855ebb0ddd9c13773fddf70134357de04f8001d180",
+  "counts": {
+    "products": 150,
+    "categories": 5,
+    "brands": 5,
+    "tags": 5,
+    "product_tags": 253
+  },
+  "price_total": "224343.06",
+  "stock_total": 37166,
+  "low_stock_ids": [
+    136,
+    139
+  ],
+  "normalization": "Price: decimal(12,2); rating: decimal(2,1). Original workbook unchanged."
+}
